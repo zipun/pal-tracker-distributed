@@ -6,6 +6,6 @@ applications:
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: registration-server-jp.cfapps.io
+    REGISTRATION_SERVER_ENDPOINT: https://registration-server-jp.cfapps.io/
   services:
   - tracker-registration-database
