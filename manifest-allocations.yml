@@ -6,6 +6,6 @@ applications:
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: https://{REGISTRATION_SERVER_NAME}.cfapps.io
+    REGISTRATION_SERVER_ENDPOINT: https://allocations-server-jp.cfapps.io
   services:
   - tracker-allocations-database
