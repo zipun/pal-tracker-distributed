@@ -14,15 +14,13 @@ jobs:
   include:
     - stage: build and publish
       language: java
-      env:
-        global:
-          - MAVEN_OPTS="-Xmx1g"
-          - JAVA_OPTS=-Xmx1g
       jdk: oraclejdk8
       addons:
         mariadb: '10.2'
       install: skip
       before_script:
+        - "echo $JAVA_OPTS"
+        - "export JAVA_OPTS=-Xmx1g"
         - mysql -uroot < databases/create_databases.sql
         - ./gradlew testMigrate
       script: ./gradlew clean build
