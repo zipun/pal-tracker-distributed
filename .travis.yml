@@ -14,6 +14,9 @@ jobs:
   include:
     - stage: build and publish
       language: java
+      env:
+        global:
+          - JAVA_OPTS="-Xmx1g"
       jdk: oraclejdk8
       addons:
         mariadb: '10.2'
