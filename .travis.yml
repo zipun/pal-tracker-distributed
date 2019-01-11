@@ -16,8 +16,8 @@ jobs:
       language: java
       env:
         global:
-          - JAVA_OPTS="-Xmx1g"
           - MAVEN_OPTS="-Xmx1g"
+          - JAVA_OPTS=-Xmx1g
       jdk: oraclejdk8
       addons:
         mariadb: '10.2'
