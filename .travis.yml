@@ -100,7 +100,7 @@ jobs:
         - sudo apt-get update
         - sudo apt-get install cf-cli
       script:
-        - cf target -s $CF_SPACE
         - cf login -a $CF_API_URL -u $CF_USERNAME -p $CF_PASSWORD -o $CF_ORG -s $CF_SPACE
+        - cf target -s $CF_SPACE
         - ./gradlew cfMigrate
 
