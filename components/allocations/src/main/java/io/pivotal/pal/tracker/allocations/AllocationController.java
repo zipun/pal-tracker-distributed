@@ -16,7 +16,8 @@ import static java.util.stream.Collectors.toList;
 
 @RestController
 @RequestMapping("/allocations")
-public class AllocationController {
+public class
+AllocationController {
 
     private final AllocationDataGateway gateway;
     private final ProjectClient client;
