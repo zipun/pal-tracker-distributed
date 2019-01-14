@@ -3,3 +3,8 @@ apply from: "$projectDir/../server.gradle"
 dependencies {
     compile project(":components:allocations")
 }
+
+bootRun.environment([
+        "MANAGEMENT_ENDPOINT_HEALTH_SHOWDETAILS": "always",
+])
+

@@ -3,3 +3,7 @@ apply from: "$projectDir/../server.gradle"
 dependencies {
     compile project(":components:timesheets")
 }
+
+bootRun.environment([
+        "MANAGEMENT_ENDPOINT_HEALTH_SHOWDETAILS": "always",
+])
